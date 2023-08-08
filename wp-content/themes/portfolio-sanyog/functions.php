@@ -178,3 +178,15 @@ require get_template_directory() . '/inc/customizer.php';
 if ( defined( 'JETPACK__VERSION' ) ) {
 	require get_template_directory() . '/inc/jetpack.php';
 }
+
+/**
+ * ACF Block settings
+ */
+require get_template_directory() . '/inc/acf-blocks/sanyog-register-block-types.php';
+require get_template_directory() . '/inc/acf-blocks/sanyog-block-render-callback.php';
+require get_template_directory() . '/inc/acf-blocks/sanyog-register-block-category.php';
+
+/**
+ * Modify Block attributes
+ */
+require get_template_directory() . '/inc/sanyog-modify-block-attributes.php';
