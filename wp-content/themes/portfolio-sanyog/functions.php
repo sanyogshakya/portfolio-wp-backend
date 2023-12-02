@@ -145,7 +145,7 @@ function portfolio_sanyog_register_acf_options_pages() {
 			'page_title'    	=> 'Theme Settings',
 			'menu_title'    	=> 'Theme Settings',
 			'menu_slug'     	=> 'theme-settings',
-			'capability'		=> 'edit_posts',
+			'capability'			=> 'edit_posts',
 			'show_in_graphql'	=> true,
 		)
 	);
