@@ -70,5 +70,37 @@ function sanyog_register_block_types()
 			),
 		));
 
+		// registers Technology block
+		acf_register_block_type(array(
+			'name'				=> 'sanyog-technologies',
+			'title'				=> __('Technologies'),
+			'description'		=> __('A block that showcases technology icons.'),
+			'render_callback'	=> 'sanyog_block_render_callback',
+			'category'			=> 'my-blocks',
+			'icon'				=> 'align-full-width',
+			'keywords'			=> array('technology', 'icons', 'technologies'),
+			'mode'				=> 'edit',
+			'supports'			=> array(
+				'mode'			=> 'false',
+				'align'			=> false,
+			),
+		));
+
+		// registers Technology block
+		acf_register_block_type(array(
+			'name'				=> 'sanyog-project-listing',
+			'title'				=> __('Project Listing'),
+			'description'		=> __('A block that lists projects.'),
+			'render_callback'	=> 'sanyog_block_render_callback',
+			'category'			=> 'my-blocks',
+			'icon'				=> 'align-full-width',
+			'keywords'			=> array('project', 'listing'),
+			'mode'				=> 'edit',
+			'supports'			=> array(
+				'mode'			=> 'false',
+				'align'			=> false,
+			),
+		));
+
   }
 }
